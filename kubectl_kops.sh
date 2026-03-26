@@ -11,6 +11,6 @@ echo "export PATH=$PATH:/usr/local/bin/" >> source .bashrc
 export KOPS_STATE_STORE=s3://ritesh.k8s.local
 
 
-kops create cluster --name ritesh.k8s.local --zones ap-south-1a --control-plane-image ami-02b8269d5e85954ef  --control-plane-count=1 --control-plane-size c7i-flex.large --image ami-02b8269d5e85954ef  --node-count=2 --node-size c7i-flex.large
+kops create cluster --name ritesh.k8s.local --zones ap-south-1a --control-plane-image ami-05d2d839d4f73aafb  --control-plane-count=1 --control-plane-size c7i-flex.large --image ami-05d2d839d4f73aafb  --node-count=2 --node-size c7i-flex.large
 
 TO DELETE: kops delete cluster --name rahams.k8s.local --yes
